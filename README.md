@@ -26,8 +26,8 @@ The exploit developed by us is consisted of two smart contracts that reproduce t
 The basic idea is to mint cUSDC to provide collateral, borrow ETH, call `exitMarket()` for cUSDC, withdraw the USDC from the pool, transfer ETH out. This is done by simply calling `exitMarket()` within the fallback function. The reason it works is because when the fallback function is called to receive the borrowed ETH, the loan is not updated on the protocol.
 
 The two contracts used to reproduce the attack are the Launcher contract and the Exploit contract.
-The Launcher contract provides the initial liquidity via flash loan and retrieves the final profit.
-The Exploit contract exploits the re-entrancy bug to transfer the ETH to the Launcher and withdraw USDC to payback the flash loan.
+The [Launcher contract](https://github.com/papr1ka2/poc/blob/master/contracts/Launcher.sol) provides the initial liquidity via flash loan and retrieves the final profit.
+The [Exploit contract](https://github.com/papr1ka2/poc/blob/master/contracts/Exploit.sol) exploits the re-entrancy bug to transfer the ETH to the Launcher and withdraw USDC to payback the flash loan.
 
 ## 2.2 Providing liquidity via flash loan
 To maximize the profit, we must maximize the amount of USDC we can provide as collateral. To do this, we borrow 150M USDC via flash loan from Balancer.
@@ -50,4 +50,5 @@ The same attack was repeated on many other pools causing catastrophic damage. Re
 
 ## References
 [Fei Rari - Rekt 2](https://rekt.news/fei-rari-rekt/)
+
 [Peckshield - tweet](https://twitter.com/peckshield/status/1520369315698016256)
