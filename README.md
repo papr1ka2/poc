@@ -1,7 +1,7 @@
 # The Fei Rari Hack Explained
 
 ## TL;DR
-On April 30, 2022, Fuse of Rari Capital, a decentralized lending platform on the Ethereum blockchain, was hacked with a total loss of $80M. Multiple pools were hacked using flash loan to exploit a simple re-entrancy bug in the Compound code they were based on. Currently, 
+On April 30, 2022, Fuse of Rari Capital, a decentralized lending platform on the Ethereum blockchain, was hacked with a total loss of $80M. Multiple pools were hacked using flash loan to exploit a simple re-entrancy bug in the Compound code they were based on.
 
 ## Transaction
 7 attack transactions drained tokens from various lending pools. Check the [attacker's address](https://etherscan.io/address/0x6162759edad730152f0df8115c698a42e666157f) to view all the attack transactions. The attack is consisted of two contracts ([1](https://etherscan.io/address/0x6162759edad730152f0df8115c698a42e666157f), [2](https://etherscan.io/address/0x6162759edad730152f0df8115c698a42e666157f)). In this post, we will discuss on [this](https://etherscan.io/tx/0xab486012f21be741c9e674ffda227e30518e8a1e37a5f1d58d0b0d41f6e76530) transaction used to drain Fuse Pool 127.
