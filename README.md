@@ -52,3 +52,6 @@ The same attack was repeated on many other pools causing catastrophic damage. Re
 [Fei Rari - Rekt 2](https://rekt.news/fei-rari-rekt/)
 
 [Peckshield - tweet](https://twitter.com/peckshield/status/1520369315698016256)
+
+## Who are we?
+We are [PwnedNoMore](https://pwnednomore.org/), a white hat hacker DAO created by and for the best talents to protect our beloved crypto/Web3 world.
